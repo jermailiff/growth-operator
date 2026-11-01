@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Growth Operator V0</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><p class="eyebrow">GROWTH OPERATOR</p><h1>Growth Operator <span>V0</span></h1><p>Give it a growth question. Get completed research, a decision, and a clear next step.</p></header>
+    <p id="connection" class="connection">Loading saved context…</p>
+    <p id="notice" role="status" aria-live="polite"></p>
+    <section aria-labelledby="context-title">
+      <div class="section-heading"><h2 id="context-title">What should we work on?</h2><span id="saved-status">Saved locally</span></div>
+      <form id="context-form">
+        <fieldset id="context-fields">
+          <label for="objective">What do you want to achieve?</label>
+          <p class="hint">The outcome you want to change and how you measure success.</p>
+          <textarea id="objective" rows="4" required></textarea>
+          <label>Ideas to assess</label>
+          <p class="hint">Proposed or active attempts. Ideas are hypotheses to assess.</p>
+          <div id="initiatives"></div>
+          <button id="add-initiative" type="button" class="secondary">+ Add idea</button>
+          <details class="context-details"><summary>Business context &amp; current observations</summary>
+          <label for="businessContext">Business Context</label>
+          <p class="hint">Durable facts: business, customers, positioning, constraints, economics, channels, brand, and tools.</p>
+          <textarea id="businessContext" rows="8" required></textarea>
+          <label for="state">State</label>
+          <p class="hint">New observations, results, available evidence, and current constraints. Keep facts already captured above and decision outcomes in their own sections.</p>
+          <textarea id="state" rows="5"></textarea>
+          </details>
+          <div class="actions"><button type="submit" class="secondary">Save context</button><button id="run" type="button">Run Operator</button></div>
+        </fieldset>
+      </form>
+      <p class="hint">Run Operator saves your edits, uses your history, and researches public documents when useful. Prospect discovery and enrichment require a separate, bounded approval before data is acquired or credits are spent. It never sends outreach or changes external systems.</p>
+    </section>
+    <section aria-labelledby="history-title"><div class="section-heading"><h2 id="history-title">Work & decisions</h2><span id="count"></span></div><div id="decisions"></div></section>
+    <p><a href="/pilot.html">Supervised email pilot: preview, approval and results</a></p>
+    <footer>Record what happened. Start the next run when you’re ready.</footer>
+  </main>
+</body>
+</html>

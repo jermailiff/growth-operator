@@ -1,0 +1,38 @@
+{
+  "context": {
+    "businessContext": "This is a synthetic small US repair and maintenance business considering direct federal government contracts as a prime contractor. The owner reports that the business has obtained a Unique Entity ID through SAM.gov but has not completed entity registration and has no active SAM.gov registration. Treat those business facts as supplied; do not investigate the business’s identity or registration record.",
+    "objective": "Establish whether the business satisfies the general SAM.gov registration prerequisite before allocating time to preparing direct federal contract bids.",
+    "initiatives": [
+      {
+        "description": "Assess readiness for ordinary, non-exempt direct federal prime contracting. This investigation concerns only the SAM.gov registration prerequisite, not overall eligibility or a particular solicitation.",
+        "origin": "owner",
+        "status": "proposed"
+      }
+    ],
+    "state": "No public documentation establishing the registration requirement has been supplied or examined. The official documentation starting point is https://sam.gov/entity-registration.\n\nDetermine whether having a Unique Entity ID alone satisfies the general registration prerequisite, or whether completed active entity registration is also required.\n\nAssume ordinary procurement with no applicable registration exemption. Grants, subcontracting, emergency procurement and other exceptional arrangements are outside scope.\n\nPublic-document research is authorized. Do not sign in, look up an actual business, collect private information, register an entity, contact anyone or submit a bid. Any subsequent operational action requires owner approval.",
+    "decisionHistory": []
+  },
+  "originatingDecision": {
+    "assessment": "The business is considering direct federal prime contracting, but its readiness under the general SAM.gov registration prerequisite is unresolved.",
+    "recommendedNextStep": "Prepare an outline for assessing whether a Unique Entity ID alone satisfies the general SAM.gov registration prerequisite for ordinary, non-exempt direct federal prime contracting.",
+    "reasoningSummary": "The owner reports having a Unique Entity ID but no completed active entity registration. No public requirement has been examined, so those business facts do not establish whether the prerequisite is satisfied. Resolving this narrow public question should precede bid-preparation work.",
+    "evidenceUsed": [
+      "Owner-provided: the business has obtained a Unique Entity ID through SAM.gov.",
+      "Owner-provided: the business has not completed entity registration and has no active SAM.gov registration."
+    ],
+    "assumptions": [
+      "The contemplated work is ordinary, non-exempt direct federal prime contracting.",
+      "The supplied business registration facts are accurate for this synthetic case."
+    ],
+    "importantUnknowns": [
+      "Whether a Unique Entity ID alone satisfies the general SAM.gov registration prerequisite.",
+      "Whether completed active entity registration is additionally required."
+    ],
+    "proposedAction": "Prepare the assessment outline only. This earlier operator has no external-document access, so it cannot examine the official SAM.gov documentation. Research is deferred solely because that capability is unavailable; the operator would examine the published requirement later when external-document access becomes available. Start with https://sam.gov/entity-registration and examine linked authoritative public documentation only if needed. Do not register the business, access accounts, contact anyone or submit a bid.",
+    "ownerApprovalRequired": false,
+    "ownerInputRequired": false,
+    "ownerRequirementDetails": "The owner has authorized public-document investigation of this specific prerequisite. No additional owner input is needed for that investigation. Operational actions remain subject to separate owner approval.",
+    "intendedOutcomeOrEvidence": "An authoritative, cited determination of the general registration prerequisite, followed by an explicit comparison with the supplied business registration facts. Preserve any unresolved qualification and do not treat this narrow finding as establishing overall contracting eligibility.",
+    "learnings": []
+  }
+}

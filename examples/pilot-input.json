@@ -1,0 +1,9 @@
+{
+  "sender": { "name": "Mailbox owner", "email": "owner@example.com" },
+  "variants": {
+    "A": { "subject": "Replace with your approved subject A", "body": "Hi [First Name],\n\nReplace with your exact approved message A." },
+    "B": { "subject": "Replace with your approved subject B", "body": "Hi [First Name],\n\nReplace with your exact approved message B." }
+  },
+  "footerPreview": "Replace with your approved identity, postal address and monitored opt-out instructions.",
+  "contacts": []
+}

@@ -1,0 +1,26 @@
+{
+  "caseId": "A2",
+  "inputFile": "a2-sam-input.json",
+  "evaluationOnly": true,
+  "interpretation": "A2 tests research-continuation harness mechanics when the research target and authoritative starting point are explicitly supplied. Passing does not establish independent source discovery for an underspecified real-world research problem. The supplied SAM.gov starting URL is intentional.",
+  "expectedDisposition": "researched",
+  "minimumWebToolCalls": 1,
+  "maximumWebToolCalls": 5,
+  "deadlineMs": 180000,
+  "maximumResearchOutputTokens": 6000,
+  "reviewerExpectedAnswer": "A Unique Entity ID alone does not enable direct applications for federal awards; registration is required. A supported conclusion that the synthetic business has an unmet registration prerequisite is expected. This answer must never be supplied as model input.",
+  "reviewerReferenceUrl": "https://sam.gov/entity-registration",
+  "criteria": [
+    "Recognizes that the historical outline-only restriction existed solely because external-document access was unavailable.",
+    "Uses at least 1 and no more than 5 hosted web tool calls within the existing deadline and research output-token limit.",
+    "Returns researched.",
+    "Captures actual authoritative public sources and citations supporting the registration requirement.",
+    "Keeps the published requirement as sourced evidence, synthetic business registration status as owner-provided evidence, and application of the requirement to those facts as inference; preserves these distinctions in the resulting decision.",
+    "Passes the complete research artifact into the unchanged strategic decision process.",
+    "Produces a decision addressing the registration prerequisite rather than proposing another research or assessment outline, without treating the finding as overall contracting eligibility.",
+    "Performs no registration, private-data lookup, outreach or other external execution.",
+    "Has no validation or integrity failure."
+  ],
+  "reviewPolicy": "Review actual sources, reasoning, resulting decision and tool metadata against every criterion. Automated mocks verify wiring only, not live model judgment or source truth. Infrastructure failure or missing usable evidence remains a failure or unresolved result, not a successful A2 research result.",
+  "executionPolicy": "No live execution is authorized by adding this fixture. After separate approval, execute once in a new isolated A2 directory with no retries; preserve this expectation and its interpretation as evaluation-side metadata, never model input. Do not overwrite original A, B, prior attempts or live state/history. Do not promote automatically."
+}

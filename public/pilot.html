@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Supervised email pilot</title><link rel="stylesheet" href="/styles.css"><script src="/pilot.js" defer></script></head><body><main>
+<p><a href="/">Back to Growth Operator</a></p><h1>Supervised email pilot</h1><p>Preview exact messages, approve a frozen batch, send once, and manually refresh results. No automatic follow-ups.</p><p id="notice" role="status"></p>
+<section><h2>Mailbox</h2><p id="mailbox"></p><label><input type="checkbox" id="owner-authorized"> The named mailbox owner authorizes connecting their own Google mailbox</label><button id="connect" type="button">Connect intended mailbox</button><p>Connecting does not authorize sending. A non-Google mailbox or a different primary account is not supported in this pilot.</p></section>
+<section><h2>Contacts &amp; owner feedback</h2><div id="feedback"></div><div id="contacts"></div></section>
+<section><h2>Messages &amp; shared footer</h2><div id="drafts"></div><form id="prepare">
+<label>Shared signature/footer<textarea id="footer" rows="10"></textarea></label>
+<label>Business postal address<input id="postalAddress"></label>
+<label>Reply-based opt-out wording<input id="optOutInstructions" value="To stop receiving these emails, reply ‘unsubscribe’."></label>
+<label>Confirmed mailbox-owner email<input id="ownerAuthorizedMailbox" type="email"></label>
+<label>Sending-service suitability: actual policy/account review and date<textarea id="serviceEvidence"></textarea></label>
+<label>Separately approved controlled test: approval reference, date and received authentication results<textarea id="authenticationEvidence"></textarea></label>
+<label><input type="checkbox" id="footerApproved"> The owner approves this complete footer, postal address and monitored reply opt-out</label>
+<label><input type="checkbox" id="linksChecked"> Signature destinations checked; displayed links/addresses are correct</label>
+<label><input type="checkbox" id="serviceSuitable"> The actual Google mailbox/service permits this source and intended use</label>
+<label><input type="checkbox" id="authenticationPassed"> A separately approved controlled test resolved the observed authentication issue for this sender</label>
+<button type="submit">Freeze selected recipients &amp; A/B preview</button><p>You may freeze a preview with checks pending. Sending stays blocked. To change copy, sender, recipients or footer, create a new preview and obtain fresh approval. Existing snapshots remain unchanged.</p></form></section>
+<section><h2>Frozen batches &amp; results</h2><div id="batches"></div></section>
+</main></body></html>

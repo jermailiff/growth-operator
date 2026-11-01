@@ -1,0 +1,15 @@
+{
+  "name": "growth-operator-v0",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node --env-file=.env src/server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "description": "Experimental local growth operator with bounded research, evidence and owner review",
+  "license": "MIT"
+}
